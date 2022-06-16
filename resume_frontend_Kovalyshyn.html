@@ -6,16 +6,18 @@
     <link rel="stylesheet" href="css/style1.css" />
 </head>
 <body>
-
-    <div>
-        <p><h1>Iryna Kovalyshyn</h1></p>
-        <p> Kyiv, Ukraine</p>
-        <p> +380688341346</p>
-        <p>email: enjoyer90@gmail.com</p>
+    <header>
+        <h1>Iryna Kovalyshyn</h1>
+    </header>
+    
+    <section class="general information">
+        <p> <strong>Kyiv, Ukraine</strong></p>
+        <p> <em>+380688341346</em></p>
+        <p>email: <small>enjoyer90@gmail.com</small></p>
         <img src="img/portrait.jpg" alt="Kovalyshyn_portrait" width="250" height="250" />
         <br><a href="https://www.facebook.com/irina.kovalishin/"><img scr="img/fb.jpg" alt="facebook" width="50" height="50" /></a>
         <a href="https://www.linkedin.com/in/iryna-kovalyshyn-54728910a/"><img scr="img/lin.jpg" alt="linkedin" width="50" height="50" /></a>
-    </div>
+    </section>
 
     <h2> Junior Frontend Developer </h2>
 
@@ -77,26 +79,24 @@
 <h2>HTML Form</h2>
 <form>
     <label for="uername">enter your name:</label>
-    <input type="text" id="username" name="username">
+    <input type="text" id="username" name="username" placeholder="username" required>
     <br>
     <br>
     <label for="email">enter your email:</label>
-    <input type="email" id="email" name="email">
+    <input type="email" id="email" name="email" placeholder="email" required>
     <br>
     <br>
     <label for="password">password:</label>
-    <input type="password" id="password" name="password">
-</form>
-<br>
-<form action="">
+    <input type="password" id="password" name="password" required>
+
+    <br>
     <p.>Select your gender:</p.>
     <br>
     <input type="radio" name="gender" value="male"> Male <br>
     <input type="radio" name="gender" value="female"> Female <br>
     <input type="radio" name="gender2" value="other"> Other <br> 
-</form>
-<br>
-<form action="">
+
+    <br>
     <p.>Select your age:</p.>
     <br>
     <input type="radio" name="age" value="0-25" id="option_1">
@@ -105,8 +105,24 @@
     <label for="option_2">26-50</label>
     <input type="radio" name="age" value="51+" id="option_3">
     <label for="option_3">51+</label>
+
+    <br><br>
+    <label for="">Security question:</label>
+    <select name="question" id="question">
+        <option value="q1">What colour are your favourite pair of socks?</option>
+        <option value="q2">If you could be a vegetable, what it be?</option>
+        <option value="q3">What is your best ever security question?</option>
+    </select>
+    <br> <br>
+
+    <label for="answer">Security question answer:</label>
+    <input type="text" id="answer" name="answer">
+    <br><br>
+
+    <label for="bio">Your bio:</label><br>
+    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
+    <br>
+    <input type="submit" value="Submit the form">
+
 </form>
-
-<br><br>
-
 </html>
